@@ -1,0 +1,111 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #4A5043;
+	font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+	margin-top:50px;
+	color: #fff;
+}
+
+.clear:after {
+	display: block;
+	content:" ";
+	clear: both;
+}
+
+.tabs {
+	display: block;
+	margin: -25px -25px 40px -25px;
+	padding: 0;
+	border-bottom: 3px solid #FFFFFF;
+}
+
+.tabs li {
+	display: block;
+	list-style: none;
+	float: left;
+	width: 124px;
+	margin: 0;
+	padding: 15px 25px 19px 25px;
+	font-size: 22px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.tabs .active {
+	text-decoration: underline;
+}
+
+#form {
+	width: 300px;
+	margin: 100px auto;
+	background-color: #5C505A;
+	padding: 25px;
+}
+
+#form .field {
+	display: block;
+	padding: 10px;
+	font-size: 22px;
+	margin-top: 14px;
+	border: 3px solid #FFFFFF;
+}
+
+#form .button:focus,
+#form .field:focus {
+	outline: none;
+	border-color:#000000;
+}
+
+#form .field + label {
+	position: relative;
+	bottom:42px;
+	padding: 10px;
+	font-size: 22px;
+	color: #5C505A;
+	z-index: 999;
+}
+
+#form .field + .notEmpty,
+#form .field:focus + label {
+	bottom: 88px;
+	color: #FFFFFF;
+}
+
+#form label:focus + label {
+	bottom: 0;
+	color: #5C505A;
+}
+
+#form .button,
+#form .button:hover,
+#form .field + label,
+#form .field:focus + label {
+	transition: 0.5s bottom,
+				0.5s color,
+				0.5s border-color,
+				0.5s background-color;
+}
+
+#form .button {
+	display: block;
+	width: 294px;
+	padding: 10px;
+	font-size: 22px;
+	border: 3px solid #FFFFFF;
+	background:none;
+	color: #FFFFFF;
+}
+
+#form .button:hover {
+	color: #5C505A;
+	background:#FFFFFF;
+}
